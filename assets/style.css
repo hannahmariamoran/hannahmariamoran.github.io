@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --font-size: 20px;
     --color: darkgray;
@@ -23,6 +25,7 @@ body{
 }
 
 h1{
+    font-family: Work Sans;
     color: blue;
     font-size: calc(var(--font-size) * 2);
 }
@@ -41,8 +44,13 @@ h1{
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    font-family: Work Sans;
 }
 
 .grid-item:hover{
     background-color: rgb(208, 208, 208);
+}
+
+footer{
+    font-family: Work Sans;
 }
