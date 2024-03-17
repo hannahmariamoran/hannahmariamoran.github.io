@@ -1,34 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --font-size: 20px;
-    --color: darkgray;
-
-    --gutter: calc(var(var(--font-size) * 2));
+header{
+    border-bottom: 1px solid;
+    padding: 32px;
 }
 
-@media (min-width:600px) {
-    :root {
-        --font-size: 32px;
-    }
-}
-
-body{
-    font-size: var(--font-size);
-    padding-top: calc(var(var(--gutter) * 3));
-    padding-bottom: calc(var(var(--gutter) * 3));
-    padding-left: var(--gutter);
-    padding-right: var(--gutter);
-    display: flex;
-    flex-direction: column;
-    row-gap: var(--gutter);
-}
-
+/* Type Styles */
 h1{
     font-family: Work Sans;
-    color: blue;
-    font-size: calc(var(--font-size) * 2);
+    font-size: 32px;
+    line-height: 36px;
 }
+h2{
+    font-family: Work Sans;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: right;
+}
+h6{
+    font-family: Work Sans;
+    font-size: 20px;
+    line-height: 20px;
+}
+a{
+    font-family: Work Sans;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/* Footer */
+footer{
+    border-top: 1px solid;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 
 .grid-container {
     display: grid;
