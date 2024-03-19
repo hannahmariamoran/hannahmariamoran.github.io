@@ -1,64 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-header{
-    border-bottom: 1px solid;
-    padding: 32px;
+/* ========== text variables ========== */
+:root {
+    --h1: 20px;
+    --h1-line-height: 22px;
+    --h6: 16px;
+    --h6-line-height: 20px;
+    --a: 16px;
+    --a-line-height: 20px;
 }
-
-/* Type Styles */
+/* ========== text styles ========== */
 h1{
     font-family: Work Sans;
-    font-size: 32px;
-    line-height: 36px;
-}
-h2{
-    font-family: Work Sans;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: right;
+    font-size: var(--h1);
+    line-height: var(--h1-line-height);
 }
 h6{
     font-family: Work Sans;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: var(--h6);
+    line-height: var(--h6-line-height);
 }
 a{
     font-family: Work Sans;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: var(--a);
+    line-height: var(--a-line-height);
 }
-
-/* Footer */
+/* ========== nav styling ========== */
+nav{
+    padding: 20px;
+    border-bottom: 1px solid;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ======== footer styling ======== */
 footer{
     border-top: 1px solid;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
 }
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: none;
-    padding: 10px;
-    gap: 20px;
+.personal-links{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }
 
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    font-family: Work Sans;
+/* ================================== tablet media query ================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* ========== text variables ========== */
+    :root {
+        --h1: 24px;
+        --h1-line-height: 26px;
+        --h6: 16px;
+        --h6-line-height: 20px;
+        --a: 16px;
+        --a-line-height: 20px;
+    }
+    /* ========== nav styling ========== */
+    nav{
+        padding: 24px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    /* ======== footer styling ======== */
+    footer{
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 }
-
-.grid-item:hover{
-    background-color: rgb(208, 208, 208);
-}
-
-footer{
-    font-family: Work Sans;
+  
+/* ================================== desktop media query ================================== */
+@media (min-width: 1024px) {
+    /* ========== text variables ========== */
+    :root {
+        --h1: 26px;
+        --h1-line-height: 28px;
+        --h6: 16px;
+        --h6-line-height: 20px;
+        --a: 16px;
+        --a-line-height: 20px;
+    }
+    /* ========== nav styling ========== */
+    nav{
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    }
+    /* ======== footer styling ======== */
+    footer{
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
 }
