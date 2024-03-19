@@ -79,6 +79,10 @@ footer{
         left: 0;
         width: 100%;
     }
+    /* ======== main styling ======== */
+    main{
+        padding-top: 80px;
+    }
 }
   
 /* ================================== desktop media query ================================== */
@@ -110,5 +114,9 @@ footer{
         bottom: 0;
         left: 0;
         width: 100%;
+    }
+    /* ======== main styling ======== */
+    main{
+        padding-top: 80px;
     }
 }
