@@ -2,23 +2,16 @@
 
 /* ========== text variables ========== */
 :root {
-    --h1: 20px;
-    --h1-line-height: 22px;
-    --h6: 16px;
-    --h6-line-height: 20px;
-    --a: 16px;
-    --a-line-height: 20px;
+    --h1: 14px;
+    --h1-line-height: 14px;
+    --a: 14px;
+    --a-line-height: 14px;
 }
 /* ========== text styles ========== */
 h1{
     font-family: Work Sans;
     font-size: var(--h1);
     line-height: var(--h1-line-height);
-}
-h6{
-    font-family: Work Sans;
-    font-size: var(--h6);
-    line-height: var(--h6-line-height);
 }
 a{
     font-family: Work Sans;
@@ -38,27 +31,32 @@ ul{
 /* ======== footer styling ======== */
 footer{
     border-top: 1px solid;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
 }
-.personal-links{
+main{
     display: flex;
-    flex-direction: row;
-    gap: 32px;
+    flex-direction: column;
+}
+section{
+    padding: 20px;
 }
 
 /* ================================== tablet media query ================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
     /* ========== text variables ========== */
     :root {
-        --h1: 24px;
-        --h1-line-height: 26px;
-        --h6: 16px;
-        --h6-line-height: 20px;
+        --h1: 16px;
+        --h1-line-height: 16px;
         --a: 16px;
-        --a-line-height: 20px;
+        --a-line-height: 16px;
     }
     /* ========== nav styling ========== */
     nav{
@@ -70,18 +68,17 @@ footer{
     }
     /* ======== footer styling ======== */
     footer{
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 120px;
+        padding-right: 120px;
         padding-top: 16px;
         padding-bottom: 16px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
     }
     /* ======== main styling ======== */
     main{
         padding-top: 80px;
+    }
+    section{
+        padding: 24px;
     }
 }
   
@@ -89,79 +86,42 @@ footer{
 @media (min-width: 1024px) {
     /* ========== text variables ========== */
     :root {
-        --h1: 20px;
-        --h1-line-height: 20px;
-        --h6: 16px;
-        --h6-line-height: 20px;
+        --h1: 16px;
+        --h1-line-height: 16px;
         --a: 16px;
         --a-line-height: 20px;
     }
-    /* ========== nav styling ========== */
+    /* =========== type styling =========== */
+    a:hover{
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    /* =========== nav styling ============ */
     nav{
-        padding: 20px;
-        padding-top: 24px;
+        padding: 32px;
+        padding-top: 26px;
         top: 0;
         left: 0;
         width: 100%;
         height: 7vh;
         align-items: center;
+        /* position: fixed; */
     }
-    /* ======== footer styling ======== */
+    /* ========== footer styling ========== */
     footer{
-        padding: 20px;
-        padding-top: 24px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
+        padding: 32px;
+        padding-top: 26px;
+        padding-left: 200px;
+        padding-right: 200px;
         height: 7vh;
-        align-items: center;
     }
     /* ======== main styling ======== */
     main{
         height: 86vh;
-        display: flex;
+        flex-direction: row;
     }
-    .project-about{
+    section{
         width: 50vw;
-        display: flex;
-        padding: 40px;
-    }
-    .project-buttons{
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        border-left: 1px solid black;
-    }
-    button{
-        flex-grow: 1;
-        height: calc(20% - 1px); 
-        border-bottom: 1px solid black; 
-        text-align: left;
-        padding: 40px;
-    }
-    button:last-child{
-        flex-grow: 1;
-        height: calc(20% - 1px); 
-        border-bottom: 0px; 
-    }
-    button:nth-child(1):hover {
-        background-color: rgb(22, 64, 255);
-    }
-    
-    button:nth-child(2):hover {
-        background-color: rgb(63, 97, 252);
-    }
-    
-    button:nth-child(3):hover {
-        background-color: rgb(102, 129, 253);
-    }
-    
-    button:nth-child(4):hover {
-        background-color: rgb(134, 155, 250);
-    }
-    
-    button:nth-child(5):hover {
-        background-color: rgb(173, 187, 249);
+        padding: 32px;
     }
 }
