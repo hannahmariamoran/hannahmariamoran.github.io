@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 
 /* ========== text variables ========== */
 :root {
@@ -6,6 +8,8 @@
     --h1-line-height: 14px;
     --a: 14px;
     --a-line-height: 14px;
+    --p: 14px;
+    --p-line-height: 14px;
 }
 /* ========== text styles ========== */
 h1{
@@ -18,10 +22,43 @@ a{
     font-size: var(--a);
     line-height: var(--a-line-height);
 }
+a:hover{
+    font-weight: 600;
+    position: relative;
+}
+a:hover::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 1px;
+    background-color: #000; 
+    animation: underline 0.3s ease forwards; 
+}
+
+@keyframes underline {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+p{
+    font-family: Work Sans;
+    font-size: var(--p);
+    line-height: var(--p-line-height);
+}
 /* ========== nav styling ========== */
 nav{
     padding: 20px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
 }
 ul{
     display: flex;
@@ -31,23 +68,72 @@ ul{
 /* ======== footer styling ======== */
 footer{
     border-top: 1px solid;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
 }
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+/* ======== main styling ======== */
 main{
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 section{
     padding: 20px;
 }
+section:first-child {
+    border-bottom: solid 1px;
+}
+.image{
+    background-color: aqua;
+    flex: 1; 
+    display: flex;
+    justify-content: left; 
+    align-items: flex-start; 
+    padding-top: 80px;
+}
+.links{
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+.links > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.links > div > button {
+    margin-bottom: 40px; 
+}
+.links > div > button a {
+    font-size: 24px; 
+    font-family: spectral;
+    font-weight: 300;
+}
+.project-button a em {
+    font-style: italic;
+}
+
 
 /* ================================== tablet media query ================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -55,30 +141,28 @@ section{
     :root {
         --h1: 16px;
         --h1-line-height: 16px;
+        --p: 16px;
+        --p-line-height: 20px;
         --a: 16px;
         --a-line-height: 16px;
     }
     /* ========== nav styling ========== */
     nav{
         padding: 24px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
     }
     /* ======== footer styling ======== */
     footer{
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: 24px;
         padding-top: 16px;
         padding-bottom: 16px;
     }
     /* ======== main styling ======== */
-    main{
-        padding-top: 80px;
-    }
     section{
         padding: 24px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
     }
 }
   
@@ -88,13 +172,10 @@ section{
     :root {
         --h1: 16px;
         --h1-line-height: 16px;
+        --p: 16px;
+        --p-line-height: 20px;
         --a: 16px;
         --a-line-height: 20px;
-    }
-    /* =========== type styling =========== */
-    a:hover{
-        font-weight: 600;
-        text-decoration: underline;
     }
     /* =========== nav styling ============ */
     nav{
@@ -111,17 +192,31 @@ section{
     footer{
         padding: 32px;
         padding-top: 26px;
-        padding-left: 200px;
-        padding-right: 200px;
         height: 7vh;
     }
     /* ======== main styling ======== */
     main{
-        height: 86vh;
         flex-direction: row;
+        height: 100vh;
     }
     section{
         width: 50vw;
         padding: 32px;
+    }
+    section:first-child {
+        border-right: solid 1px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .links > div > button {
+        margin-bottom: 48px; 
+    }
+    .links > div > button a {
+        font-size: 40px; 
+        font-family: spectral;
+        font-weight: 300;
     }
 }

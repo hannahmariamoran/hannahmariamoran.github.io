@@ -12,40 +12,42 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="">Hannah Moran</a>
+						<p>Hannah Moran</p>
 					</li>
 					<li>
-						<a href="">Typography & Interaction</a>
+						<p>Typography & Interaction</p>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-            <section>
-                <div id="project-image"></div>
+            <section class="image">
+				<h2>hello world</h2>
             </section>
-            <section>
-                <div id="project-about"></div>
+            <section class="links">
+				<div>
+					<button class="project-button" onmouseover="changeColor('red')" onmouseleave="resetColor()"><a href="/manuscript">001 <em>Manuscript</em></a></button>
+					<button class="project-button" onmouseover="changeColor('blue')" onmouseleave="resetColor()"><a href="/spread">002 <em>Spread</em></a></button>
+					<button class="project-button" onmouseover="changeColor('yellow')" onmouseleave="resetColor()"><a href="/binding">003 <em>Binding</em></a></button>
+					<button class="project-button" onmouseover="changeColor('orange')" onmouseleave="resetColor()"><a href="/links">004 <em>Links</em></a></button>
+					<button class="project-button" onmouseover="changeColor('green')" onmouseleave="resetColor()"><a href="/functions">005 <em>Functions</em></a></button>
+				</div>
             </section>
 		</main>
 		<footer>
-            <ul>
-                <li>
-                    <a href="/manuscript">Manuscript</a>
-                </li>
-                <li>
-                    <a href="/spread">Spread</a>
-                </li>
-                <li>
-                    <a href="/binding">Binding</a>
-                </li>
-                <li>
-					<a href="/links">Links</a>
-				</li>
-                <li>
-					<a href="/functions">Functions</a>
-				</li>
-            </ul>
+             <p>Hannah Moran ©️ 2024</p>
+			 <div class="footer-links">
+			 	<a href="https://www.hannahmorandesign.com/">Portfolio ↗︎</a>
+			 	<a href="https://github.com/hannahmariamoran">GitHub ↗︎</a>
+			</div>
 		</footer>
+		<script>
+			function changeColor(color) {
+				document.querySelector('.links').style.backgroundColor = color;
+			}
+			function resetColor() {
+        		document.querySelector('.links').style.backgroundColor = ''; 
+    		}
+		</script>
 	</body>
 </html>
