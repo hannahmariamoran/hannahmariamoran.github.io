@@ -25,6 +25,6 @@ fetch('js/data.json')
         // And passes the data to the function, above!
         renderItems(data);
     })
-    .catch(error => {
-        console.error('Error fetching JSON data:', error);
-    });
+    // .catch(error => {
+    //     console.error('Error fetching JSON data:', error);
+    // });

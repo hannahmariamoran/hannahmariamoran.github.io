@@ -4,7 +4,8 @@
         "Subtitle": "X",
         "Description": "X",
         "Image": "X",
-        "Alt Text": "X"
+        "Alt Text": "X",
+        "ProjectTag": "None"
     },
     {
         "Title": "Manuscript",
@@ -12,7 +13,8 @@
         "Description": "X",
         "Link": "https://hannahmariamoran.github.io/manuscript/",
         "Image": "X",
-        "Alt Text": "X"
+        "Alt Text": "X",
+        "ProjectTag": "Manuscript"
     },
     {
         "Title": "Spread",
@@ -20,7 +22,8 @@
         "Description": "X",
         "Link": "https://hannahmariamoran.github.io/spread/",
         "Image": "X",
-        "Alt Text": "X"
+        "Alt Text": "X",
+        "ProjectTag": "Spread"
     },
     {
         "Title": "Binding",
@@ -28,7 +31,8 @@
         "Description": "X",
         "Link": "https://hannahmariamoran.github.io/binding/",
         "Image": "X",
-        "Alt Text": "X"
+        "Alt Text": "X",
+        "ProjectTag": "Binding"
     },
     {
         "Title": "Links",
@@ -36,7 +40,8 @@
         "Description": "X",
         "Link": "https://hannahmariamoran.github.io/links/",
         "Image": "X",
-        "Alt Text": "X"
+        "Alt Text": "X",
+        "ProjectTag": "Links"
     },
     {
         "Title": "Functions",
@@ -44,6 +49,7 @@
         "Description": "X",
         "Link": "https://hannahmariamoran.github.io/functions/",
         "Image": "X",
-        "Alt Text": "X"
+        "Alt Text": "X",
+        "ProjectTag": "Functions"
     }
 ]
