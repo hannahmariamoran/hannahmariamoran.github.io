@@ -25,7 +25,7 @@
         "Description": "X",
         "ButtonLink": "https://hannahmariamoran.github.io/spread/",
         "ButtonText": "View Live Site",
-        "Image": "https://d2w9rnfcy7mm78.cloudfront.net/27984861/original_c2db1c7468d6e39b16d339c8bf007512.png?1715119129?bc=0",
+        "Image": "images/Spread.png",
         "Alt Text": "X",
         "ProjectTag": "Spread"
     },
@@ -35,7 +35,7 @@
         "Description": "X",
         "ButtonLink": "https://hannahmariamoran.github.io/binding/",
         "ButtonText": "View Live Site",
-        "Image": "https://d2w9rnfcy7mm78.cloudfront.net/27984860/original_a3445421f18583b462dada62efec585a.png?1715119129?bc=0",
+        "Image": "images/Binding.png",
         "Alt Text": "X",
         "ProjectTag": "Binding"
     },
@@ -45,7 +45,7 @@
         "Description": "X",
         "ButtonLink": "https://hannahmariamoran.github.io/links/",
         "ButtonText": "View Live Site",
-        "Image": "https://d2w9rnfcy7mm78.cloudfront.net/27984864/original_acbfabe4b769862dbebf7dd969a46ece.png?1715119133?bc=0",
+        "Image": "images/Links.png",
         "Alt Text": "X",
         "ProjectTag": "Links"
     },

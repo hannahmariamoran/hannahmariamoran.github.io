@@ -19,7 +19,7 @@ const renderItems = (data) => {
 
 };
 
-// Function to render year descriptions
+// Function to render project images
 const renderProjectImage = (data) => {
     // The `div` where the year descriptions will be inserted
     const projectImage = document.getElementById('project-image');
