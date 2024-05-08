@@ -5,7 +5,7 @@
 		<title>Typography and Interaction</title>
 		<link rel="stylesheet" href="/assets/reset.css">
 		<link rel="stylesheet" href="/assets/style.css">
-        <script defer src="js/main.js"></script>
+		<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
 	</head>
 	<body>
 		<header>
@@ -15,22 +15,31 @@
 						<p>Hannah Moran</p>
 					</li>
 					<li>
-						<p>Typography & Interaction</p>
+						<a href="https://typography-interaction-2324.github.io/">Typography & Interaction 23-24</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
             <section class="image">
-				<h2>hello world</h2>
+				<div class="intro-section">
+					<h1>Typography & Interaction</h1>
+					<div>
+						<h2>A collection of my work for the class, 'Typography & Interaction' which is a part of the Parsons School of Design, Communication Design (MPS) degree.</h2>
+						<h2>Each of these projects covers the fundamentals of working with typography throuhg code using HTML, CSS and Javascript.</h2>
+					</div>
+				</div>
+				<div class="cd-link">
+					<a href="https://mpscd.parsons.edu/">Communication Design MPS ↗︎</a>
+				</div>
             </section>
             <section class="links">
 				<div>
-					<button class="project-button" onmouseover="changeColor('red')" onmouseleave="resetColor()"><a href="/manuscript">001 <em>Manuscript</em></a></button>
-					<button class="project-button" onmouseover="changeColor('blue')" onmouseleave="resetColor()"><a href="/spread">002 <em>Spread</em></a></button>
-					<button class="project-button" onmouseover="changeColor('yellow')" onmouseleave="resetColor()"><a href="/binding">003 <em>Binding</em></a></button>
-					<button class="project-button" onmouseover="changeColor('orange')" onmouseleave="resetColor()"><a href="/links">004 <em>Links</em></a></button>
-					<button class="project-button" onmouseover="changeColor('green')" onmouseleave="resetColor()"><a href="/functions">005 <em>Functions</em></a></button>
+					<button class="project-button"><a href="/manuscript">001 <em>Manuscript</em></a></button>
+					<button class="project-button"><a href="/spread">002 <em>Spread</em></a></button>
+					<button class="project-button"><a href="/binding">003 <em>Binding</em></a></button>
+					<button class="project-button"><a href="/links">004 <em>Links</em></a></button>
+					<button class="project-button"><a href="/functions">005 <em>Functions</em></a></button>
 				</div>
             </section>
 		</main>
@@ -41,13 +50,5 @@
 			 	<a href="https://github.com/hannahmariamoran">GitHub ↗︎</a>
 			</div>
 		</footer>
-		<script>
-			function changeColor(color) {
-				document.querySelector('.links').style.backgroundColor = color;
-			}
-			function resetColor() {
-        		document.querySelector('.links').style.backgroundColor = ''; 
-    		}
-		</script>
 	</body>
 </html>
